@@ -4,14 +4,14 @@
 ### Install
 
 ```bash
-yarn add puppeteer-extra-minmax
+yarn add puppeteer-extra-plugin-minmax
 ```
 
 ### Usage
 
 ```js
 const puppeteer = require("puppeteer-extra");
-puppeteer.use(require("puppeteer-extra-minmax")());
+puppeteer.use(require("puppeteer-extra-plugin-minmax")());
 
 async function test() {
   const browser = await puppeteer.launch({ headless: false });
