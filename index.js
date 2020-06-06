@@ -2,7 +2,7 @@
 
 const { PuppeteerExtraPlugin } = require('puppeteer-extra-plugin')
 
-import utils from './util'
+const utils = require('./util')
 /**
  * Minimize/Maximize puppeteer pages in real time
  *
@@ -33,6 +33,6 @@ class Plugin extends PuppeteerExtraPlugin {
   }
 }
 
-module.exports = function(pluginConfig) {
+module.exports =  function(pluginConfig) {
   return new Plugin(pluginConfig)
 }

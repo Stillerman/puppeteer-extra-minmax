@@ -1,4 +1,4 @@
-export async function minimize(page) {
+async function minimize(page) {
     const session = await page.target().createCDPSession();
     const goods = await session.send("Browser.getWindowForTarget");
     const { windowId } = goods;
@@ -10,7 +10,7 @@ export async function minimize(page) {
     return;
   }
   
-  export async function maximize(page) {
+async function maximize(page) {
     const session = await page.target().createCDPSession();
     const goods = await session.send("Browser.getWindowForTarget");
     const { windowId } = goods;
@@ -19,3 +19,8 @@ export async function minimize(page) {
       bounds: { windowState: "normal" },
     });
   }
+
+module.exports = {
+  minimize,
+  maximize
+}

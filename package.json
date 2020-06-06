@@ -1,8 +1,24 @@
 {
   "name": "puppeteer-extra-minmax",
   "version": "1.0.0",
+  "description": "Minimize/maximize puppeteer browsers in real time!",
   "main": "index.js",
   "license": "MIT",
+  "keywords": [
+    "puppeteer",
+    "puppeteer-extra",
+    "puppeteer-extra-plugin",
+    "minmax",
+    "minimize",
+    "maximize",
+    "chrome",
+    "headless",
+    "pupeteer"
+  ],
+  "devDependencies": {
+    "puppeteer": "^3.3.0",
+    "puppeteer-extra": "^3.1.9"
+  },
   "dependencies": {
     "puppeteer-extra-plugin": "^3.1.4"
   }
